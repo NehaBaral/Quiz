@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="index.css"/>
+<body>
+
+
+
+<div>
+
+        <h1>Texas College Quiz</h1>
+        <div id="categoryList">
+                <label>Please Select any category </label>
+                <select id="category" onclick="getQuizQuestion(this.value)"></select>
+        </div>
+
+        <br>
+        <br>
+       
+
+    <div id="quiz" style="display: none;">
+
+        <div id="quizList"></div>
+        <button id="completeQiz" onclick="showMArks()">Completed Quiz</button>
+    </div>
+    <div id="marks" style="display: none">
+        <div style="text-align: center;color:#ff0000;font-size: 22px">Congartulation! </div>
+        <div id="finalMarks"></div>
+        <button onclick="window.location.reload()">Play Again</button>
+
+    </div>
+</div>
+</body>
+<script src="index.js"></script>
+</html>
